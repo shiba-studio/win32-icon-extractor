@@ -1,0 +1,27 @@
+﻿<Window x:Class="IconExtractorTestWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IconExtractorTestWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Image x:Name="small" Margin="40"/>
+        <TextBlock Background="#bb000000" Text="Small Icon (16x16)" VerticalAlignment="Bottom" Foreground="#FFF" HorizontalAlignment="Center"/>
+        <Image Grid.Column="1" x:Name="large" Margin="40"/>
+        <TextBlock Grid.Column="1" Background="#bb000000" Text="Large Icon (32x32)" VerticalAlignment="Bottom" Foreground="#FFF" HorizontalAlignment="Center"/>
+        <Image Grid.Row="1" x:Name="xlarge" Margin="40"/>
+        <TextBlock Grid.Row="1" Background="#bb000000" Text="Extra Large Icon (48x48)" VerticalAlignment="Bottom" Foreground="#FFF" HorizontalAlignment="Center"/>
+        <Image Grid.Row="1" Grid.Column="1" x:Name="xxlarge" Margin="40"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Background="#bb000000" Text="Jumbo Icon (256x256)" VerticalAlignment="Bottom" Foreground="#FFF" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
